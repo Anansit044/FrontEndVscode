@@ -1,0 +1,21 @@
+/* CSS */
+.container {
+  display: flex;
+  flex-direction: row ; 
+  flex-wrap: wrap;     /* เรียงแนวนอน: ซ้าย → ขวา */
+  justify-content: space-between; /* กระจายช่องห่างแนวนอน */
+  align-items: center;       /* จัดแนวตั้งให้อยู่กึ่งกลาง */
+  height: 200px;
+  background-color: lightgray;
+}
+
+.item {
+  width: 60px;
+  height: 60px;
+  background-color: tomato;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 8px;
+}
