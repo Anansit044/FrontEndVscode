@@ -1,0 +1,81 @@
+*{
+  margin: auto;
+  padding: auto;
+  font-family: 'TH SarabunPSK';
+  
+}
+body{
+  background: rgb(160, 198, 112);
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+table{
+  padding: 60px;
+  background: white;
+}
+tr{
+  border: solid black 2px;
+  font-size: 25px;
+}
+.center{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
+
+input[type=text]{
+  text-align: left;
+  align-self: center;
+  background-color: rgba(208, 208, 208, 0.469);
+  color: rgb(55, 55, 55);
+  width: 333px;
+  margin-top: 18px; ;
+  padding-left: 15px;
+  vertical-align: middle;
+  line-height: 60px;
+  font-size: 25px;
+  border-width: 0px;
+}
+input[type=password]{
+  text-align: left;
+  align-self: center;
+  background-color: rgba(208, 208, 208, 0.469);
+  color: rgb(55, 55, 55);
+  width: 333px;
+  margin-top: 18px; ;
+  padding-left: 15px;
+  vertical-align: middle;
+  line-height: 60px;
+  font-size: 25px;
+  border-width: 0px;
+}
+.regis{
+  margin-top: 15px;
+  font-size: 19px;
+  text-align: center;
+
+}
+ a {
+color: rgb(9, 179, 0);
+
+}
+a:hover{
+  color: blue;
+}
+input[type=submit]{
+    width: 350px;   
+  background-color: rgb(67, 185, 16);
+  font-size: 28px;
+  border-width: 0px;
+  color: rgb(255, 255, 255);
+  margin-top: 18px; ;
+  vertical-align: middle;
+  line-height: 60px;
+}
+input[type=submit]:hover{
+
+color:rgb(255, 255, 255);
+background-color: rgb(160, 198, 112);
+}
+

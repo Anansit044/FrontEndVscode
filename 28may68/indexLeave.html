@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ใบลา</title>
+  <link rel="shortcut icon" href="img/icon.gif" type="image/x-icon">
+  <link rel="stylesheet" href="styleLeave.css">
+</head>
+<body>
+  <table>
+    <tbody>
+      <tr>
+        <td colspan="2"><div class="Toph"
+          >
+        <form>
+          วิทยาลัยเทคนิคสัตหีบ ต.นาจอมเทียน<br>
+        อ.สัตหีบ จ.ชลบุรี 20250<br><label for="homeNo">บ้านเลขที่</label>
+            <input type="text" id="้homeNo" name="homeNo" 
+            placeholder="123/678" maxlength="7">
+          <label for="moo">หมู่ที่</label>
+            <input type="number" value="1" id="moo" name="moo" min="1" max="99">
+          <label for="soy">ซอย</label>
+            <input type="text" id="soy" name="info">
+          <br><label for="road">ถนน</label>
+            <input type="text" id="road" name="info">
+          <label for="tum">ตำบล</label>
+            <input type="text" id="tum" name="info">
+            <br><label for="sub">อำเภอ</label>
+          <input fo type="text" id="sub" name="info">
+            <label for="dis">จังหวัด</label>
+            <input type="text" id="dis" name="dis" maxlength="20">
+            </form>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <form class="Topd" >
+          <label for="date1">วันที่/เดือน/พ.ศ.</label>
+            <input type="date" id="date1" name="date1">
+          </form>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <form class="topic">
+            เรื่อง ขออนุญาต <input type="radio" id="pick1" name="pick">
+            <label for="pick1">ลาป่วย</label>
+            <input type="radio" id="pick2" name="pick">
+            <label for="pick2">ลากิจ</label>
+            <br>
+            <br>เรียน ผู้อำนวยการวิทยาลัยเทคนิคสัตหีบ
+          </form>
+        </td>
+      </tr>
+      
+      <tr>
+        <td colspan="2">
+          <form class="content"placeholder="555adaadada">
+            
+          ด้วยข้าพเจ้า <input type="radio" id="sex1" name="sex">
+          <label for="sex1">นาย</label>
+          <input type="radio" id="sex2" name="sex">
+          <label for="sex2">นางสาว</label>
+          <input type="text" id="name" name="name"> นักเรียน/นักศึกษา
+          <label for="level">ระดับ</label>
+          <select id="level" name="level">
+            <option value="y1">ปวช.1</option>
+            <option value="y2">ปวช.2</option>
+            <option value="y3">ปวช.3</option>
+            <option value="y4">ปวส.1</option>
+            <option value="y5">ปวส.2</option>
+          </select>
+          <label for="group">กลุ่นที่</label>
+           <input list="gNo" id="group" name="group" maxlength="1">
+                 <datalist id="gNo">
+                        <option value="1">
+                        <option value="2">
+                 </datalist>
+          <label for="group2">แผนกวิชา</label>
+          <select id="group2" name="group2">
+            <option value="a1">ช่างเขียนแบบเครื่องกล</option>
+            <option value="a2">ช่างเครื่องมือวัดและควบคุม</option>
+            <option value="a3">ช่างแมคคาทรอนิกส์</option>
+              <option value="a4">ช่างอิเล็กทรอนิกส์</option>
+              <option value="a5">ช่างไฟฟ้ากำลัง</option>
+              <option value="a6">ช่างกลโรงงาน</option>
+              <option value="a7">ช่างยนต์</option>
+              <option value="a8">ช่างก่อสร้าง</option>
+              <option value="a9">ช่างเชื่อมโลหะ</option>
+              <option value="10">การโรงแรมและการท่องเที่ยว
+              <option value="11">เทคโนโลยีสารสนเทศ</option>
+              <option value="12">แผนกวิชาพื้นฐาน</option>
+              <option value="13">เทคโนโลยีพื้นฐาน</option>
+              <option value="14">แผนกการบัญชี</option>
+          </select>
+          <label for="num">เลขประจำตัว</label>  
+          <input type="number" value="68319010001" id="num" name="num" min="1"max="99999999999">
+          <br>มีความประสงค์ขออนุณาต
+            <input type="radio" id="pick1" name="pick">
+            <label for="pick1">ลาป่วย</label>
+            <input type="radio" id="pick2" name="pick">
+            <label for="pick2">ลากิจ</label>
+           
+          </form>
+      
+
+        </td>
+      </tr>
+      <tr>
+        <td class="b2"><div class="bruh">เนื่องจาก </div></td>
+        <td>
+          <div class="tarea"><textarea placeholder="คำอธิบาย"></textarea>
+          </div>
+        </td>
+      </tr>
+      <tr class="content">
+        <td colspan="2">
+          จึงเรียนมาเพื่อขออนุณาต ตั้งแต่เวลา
+          <input type="time" id="start" name="start">น. 
+          วันที่<input type="date" id="stdate"name="stdate">
+          ถึงเวลา
+          <input type="time" id="start" name="start">น.
+          วันที่<input type="date" id="stdate"name="stdate">
+        </td>
+      </tr>
+      <tr class="footer">
+          <td colspan="2">
+           ขอแสดงความนับถือ
+              <br><br>ลงชื่อ<input type="file" id="upload"name="upload">
+              <br>
+          ( <input type="text" id="line" name="line" placeholder="นาย/นางสาว">  )
+          
+        </td>
+      </tr>
+    </tbody> 
+  </table>
+</body>
+</html>

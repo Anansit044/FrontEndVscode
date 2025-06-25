@@ -1,0 +1,51 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'TH SarabunPSK';
+
+}
+caption{
+margin: 3%;
+text-decoration-line: underline;
+font-size: 45px;
+font-weight: bold;
+}
+
+body{
+background: rgb(255, 255, 255);
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+}
+table{
+  border-collapse: collapse;
+  margin: 100px auto;
+  width: 70%;
+  border-collapse: collapse;
+}
+th,td{
+  border: 2px solid black;
+  padding: 10px;
+}
+th{
+background: yellow;
+
+}
+td{
+  text-align: center;
+}
+tr:nth-child(even){
+    background: rgb(248, 209, 158);
+}
+tr:nth-child(odd){
+    background:rgb(254, 244, 231);
+}
+tbody tr:nth-of-type(1) td[rowspan="5"]:nth-child(1){
+background: rgb(126, 192, 99)
+}
+
+tbody tr:nth-of-type(6) td[rowspan="5"]:nth-child(1){
+background: rgb(117, 191, 255)
+}
+

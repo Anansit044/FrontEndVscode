@@ -1,0 +1,118 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+font-family:'TH SarabunPSK';
+}
+body{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+.head1{
+  display: flex;
+  align-items: center;
+  justify-content: center
+  
+}
+header{
+  background-image: url(img/header.jpg);
+  text-align: center;
+  color: #fff;
+  padding: 20px 0;
+  
+}
+nav{
+background-color: black;
+color: #fff;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+nav a{
+  color: #fff;
+  padding: 15px 20px;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+}
+nav a:hover{
+  color: blue;
+  background: #ccc;
+ 
+  
+}
+.flex-con{
+  display: flex;
+  flex-wrap: wrap;
+}
+aside{
+  text-align: center;
+  flex: 20%;
+  background-color: #eee;
+  height: fit-content;
+  font-size: 24px;
+  
+}
+aside a{
+  color: #000000;
+  padding-left: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 100%;
+  text-decoration: none;
+  
+}
+aside a:hover{
+  color: blue;
+  background: #ccc;
+ 
+  
+}
+.menu{
+  line-height: 48px;
+  
+}
+article{
+  display: flex;
+  flex: 80%;
+  background-color: #f6fffd;
+  padding: 20px;
+  flex-direction: row;
+  
+}
+.fakeimg{
+  background: #888;
+  padding: 20px;
+
+
+}
+.fakeimg1{
+  text-align: center;
+  padding: 5px;
+  width: 50%;
+  margin: 10px;
+  
+  
+}
+img[alt="p1"],img[alt="p2"]{
+ box-shadow: 1px 1px 100px  black;
+}
+
+footer{
+  background-color: #c5c5c5;
+  padding: 60px;
+  text-align: center;
+  color: #000000;
+  
+}
+@media(max-width:700px){
+.flex-con,nav,article{
+  flex-direction: column;
+}
+.fakeimg1{
+  width: 99%;
+  
+}
+}
