@@ -31,7 +31,8 @@
               ข้อมูลเพิ่มเติม
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">สมัครสมาชิก</a></li>
+              <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#REGISTERModal">
+                  สมัครสมาชิก</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
@@ -49,7 +50,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">
+            <a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#LoginModal">
               เข้าสู่ระบบ
             </a>
         </ul>
@@ -183,8 +184,206 @@
   </div>
   </div>
 
+  <!-- Modal LOGIN -->
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword">Password</label>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Login</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal REGISTER -->
+  <div class="modal fade" id="REGISTERModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl" style="width: 745px;">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h1 class="modal-title fs-5 w-100 text-center" id="exampleModalLabel">Create Account</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
 
 
+        <div class="modal-body" >
+          <!-- First Row -->
+          <div class="row g-3">
+            <div class="col-md-6">
+              <p class="mb-1"><strong>FIrst name*</strong></p>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="registerEmail" placeholder="name@example.com">
+                <label for="registerEmail">enter your first name</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <p class="mb-1"><strong>Last name</strong></p>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="registerPassword" placeholder="Password">
+                <label for="registerPassword">enter your last name</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Row -->
+          <div class="row g-3">
+            <div class="mt-3">
+              <p class="mb-1"><strong>Email*</strong></p>
+              <div class="form-floating">
+                <input type="email" class="form-control" id="email5" placeholder="Confirm Password">
+                <label for="email5">enter your email</label>
+              </div>
+            </div>
+          </div>
+          <!-- 3 Row -->
+          <div class="row g-3">
+            <div class="col-md-6">
+              <p class="mb-1"><strong>Password*</strong></p>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="Password" placeholder="Confirm Password">
+                <label for="Password">enter your password</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <p class="mb-1"><strong>Confirm Password*</strong></p>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+                <label for="confirmPassword">enter your password again</label>
+              </div>
+            </div>
+          </div>
+          <!-- 4 Row -->
+          <div class="row g-3">
+            <div class="col-md-6">
+              <p class="mb-1"><strong>Gender</strong></p>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                  value="option1">
+                <label class="form-check-label" for="inlineRadio1">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                  value="option2">
+                <label class="form-check-label" for="inlineRadio2">Female</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <p class="mb-1"><strong>Hobbies</strong></p>
+              <div class="d-flex flex-wrap">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label" for="inlineCheckbox1">Music</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                  <label class="form-check-label" for="inlineCheckbox2">Sports</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                  <label class="form-check-label" for="inlineCheckbox3">Travel</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                  <label class="form-check-label" for="inlineCheckbox4">Movies</label>
+                </div>
+              </div>
+            </div>
+            <!-- 5 Row -->
+            <div class="row g-1">
+              <div class="col-md-6">
+                <p class="mb-1"><strong>Source of Income</strong></p>
+                <select class="form-select form-select-sm" aria-label="Small select example">
+                  <option value="1">Employed</option>
+                  <option value="2">Business</option>
+                  <option value="3">Freelance</option>
+                  <option value="4">Family Support</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="customRange4" class="form-label">Example range</label>
+                <div class="d-flex">
+                  <input type="range" class="form-range" min="20000" max="1000000" value="20000" id="customRange4">
+                  <output for="customRange4" id="rangeValue" class="ms-3"></output>
+                </div>
+
+                <script>
+                  const rangeInput = document.getElementById('customRange4');
+                  const rangeOutput = document.getElementById('rangeValue');
+
+                  function formatNumber(num) {
+                    if (num >= 1000000000) {
+                      return (num / 1000000000).toFixed(1).replace(/\.0$/, '') + 'B';
+                    }
+                    if (num >= 1000000) {
+                      return (num / 1000000).toFixed(1).replace(/\.0$/, '') + 'M';
+                    }
+                    if (num >= 1000) {
+                      return (num / 1000).toFixed(1).replace(/\.0$/, '') + 'K';
+                    }
+                    return num;
+                  }
+
+                  // Set initial value
+                  rangeOutput.textContent = formatNumber(rangeInput.value);
+
+                  rangeInput.addEventListener('input', function () {
+                    rangeOutput.textContent = formatNumber(this.value);
+                  });
+                </script>
+              </div>
+            </div>
+            <!-- 6 Row -->
+            <div class="row g-1">
+              <div class="col-md-6">
+                <p class="mb-1"><strong>Upload Profile Picture</strong></p>
+                <div class="input-group mb-3">
+                  <input type="file" class="form-control" id="inputGroupFile01">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <p class="mb-1"><strong>Age</strong></p>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" placeholder="enter your age" aria-label="Username"
+                    aria-describedby="basic-addon1" value="18">
+                </div>
+              </div>
+            </div>
+             <!-- 7 Row -->
+            <div class="row g-1">
+                <p class="mb-0"><strong>Bio</strong></p>
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                  <label for="floatingTextarea">Enter your bio</label>
+                </div>
+              
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Login</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
